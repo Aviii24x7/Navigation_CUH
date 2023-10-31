@@ -1,0 +1,20 @@
+{% extends "navapp/base.html " %} 
+{% load static %} 
+
+{% block title_block %}All Departments{% endblock %}
+
+{% block style_block %} 
+{% endblock %} 
+
+{% block body_block %}
+
+<section id="all-dept">
+  <h2>Departments</h2>
+  <div>
+    {% for dept in all_dept %}
+    {% include "navapp/includes/dept.html" %} 
+    {% endfor %}
+  </div>
+</section>
+
+{% endblock %}

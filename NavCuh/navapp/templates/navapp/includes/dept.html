@@ -1,0 +1,13 @@
+{% comment %} {% load static %}  {% endcomment %}
+<div class="dept_container">
+    
+         <article class="dept">
+        {% comment %} <a href="{% url "dept-detail-page" dept.slug %}> </a> {% endcomment %}
+        <a href="{% url "all-teachers-page" dept.slug %}">
+            <h1>{{dept.dept_name}}</h1>
+            <h1>{{dept.location}}</h1>
+        </a>
+            
+    </article>
+</div>
+
