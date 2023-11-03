@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.views.generic import CreateView,ListView
-from .models import Department, Teacher
+from .models import Department, Teacher,School
 from django.views import View
 
 
@@ -8,17 +8,29 @@ from django.views import View
 def home(request):
     return render(request, 'navapp/home.html')
 
-class AllDeptView(ListView):
-    template_name="navapp/all_dept.html"
-    model = Department
-    context_object_name = "all_dept"
+class AllSchoolView(ListView):
+    template_name="navapp/all_schools.html"
+    model= School
+    context_object_name = "all_schools"
 
-# class AllTeacherView(ListView):
-#     template_name="navapp/dept_teachers.html"
-#     model = Teacher
-#     context_object_name = "all_teachers"
+# class AllDeptView(ListView):
+#     template_name="navapp/all_dept.html"
+#     model = Department
+#     context_object_name = "all_dept"
 
-class SingleDeptView(View):
+class AllDeptView(View):
+    
+    def get(self,request,slugy):
+        school = School.objects.get(slugy=slugy)
+        
+        context={
+            "school": school,
+            "all_dept" : school.departments.all().order_by("id")
+            
+        }
+        return render(request,"navapp/all_dept.html",context)
+    
+class AllTeacherView(View):
     
     def get(self,request,slug):
         dept = Department.objects.get(slug=slug)
