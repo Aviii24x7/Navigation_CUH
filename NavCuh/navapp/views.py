@@ -8,6 +8,23 @@ from django.views import View
 def home(request):
     return render(request, 'navapp/home.html')
 
+def searchbar(request):
+    
+    if request.method=='POST':
+        searched =  request.POST['searched']
+        print(searched)
+        dept_search = Department.objects.filter(dept_name__icontains = searched)
+    
+    else:
+        
+        searched =  request.POST['searched']
+        dept_search = Department.objects.filter(dept_name__icontains = searched)
+        
+    return render(request,'navapp/search.html',context={
+        "searched":searched,
+        "searched_depts":dept_search        
+    })
+
 class AllSchoolView(ListView):
     template_name="navapp/all_schools.html"
     model= School

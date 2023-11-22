@@ -1,0 +1,14 @@
+{% extends "navapp/base.html" %}
+
+{% block body_block%} 
+<h2> 
+    You are searching for " {searched} "
+</h2>
+
+<a href="" >
+    {% for dept in searched_depts %}
+
+        {{dept.dept_name}}
+    {% endfor %}
+</a>
+{% endblock %}
