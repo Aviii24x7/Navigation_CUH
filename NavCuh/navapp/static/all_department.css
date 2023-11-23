@@ -1,0 +1,30 @@
+/* @Prince Lal */
+#departments{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+/* department container styling */
+#all-dept{
+    width: 100%;
+}
+
+.dept_container{
+    display: flex;
+    margin: 10px;
+    gap: 10px;
+}
+
+/* every department */
+.container{
+    display: flex;
+    min-width: calc(30%);
+    border: 2px;
+    border-style:solid;
+    background-image: url(Sample.jpg);
+}
+
+.dept{
+
+}

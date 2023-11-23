@@ -2,13 +2,44 @@
 
 {% block body_block%} 
 <h2> 
-    You are searching for " {searched} "
+    You are searching for '<b>{{searched}}</b>'
 </h2>
 
-<a href="" >
-    {% for dept in searched_depts %}
 
+{% comment %}
+ If you seach for a department
+{% endcomment %}
+{% if searched_depts %}
+{% for dept in searched_depts %}
+
+    <a href="{% url "all-teachers-page" dept.slug %}" >
         {{dept.dept_name}}
-    {% endfor %}
-</a>
+    </a>
+{% endfor %}
+{% endif %}
+
+{% comment %}
+ If you seach for a teachers
+{% endcomment %}
+{% if searched_teacher %}
+{% for teacher in searched_teacher %}
+
+    <a href="#" >
+        {{teacher.name}}
+    </a>
+{% endfor %}
+{% endif %}
+
+{% comment %}
+ If you seach for a teachers
+{% endcomment %}
+{% if searched_school %}
+{% for school in searched_school %}
+
+    <a href="{% url "all-dept-page" school.slugy %}" >
+        {{school.school_name}}
+    </a>
+{% endfor %}
+{% endif %}
+
 {% endblock %}

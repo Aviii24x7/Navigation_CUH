@@ -5,6 +5,14 @@
     box-sizing: border-box;
 }
 
+#headline{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 40px;
+    font-weight: 900;
+}
 .school {
     margin-top: 20px;
     width: 100%;
@@ -15,6 +23,17 @@
     height: 100vh;
 }
 
+.schoolList{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 5px 30px;
+}
+#schoolName{
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+}
 .button-85 {
     padding: 0.6em 2em;
     border: none;
@@ -105,9 +124,9 @@ h3 {
 .button-74 {
     margin-top: 15px;
     background-color: #fbeee0;
-    border: 2px solid #422800;
+    border: 1px solid #422800;
     border-radius: 30px;
-    box-shadow: #422800 4px 4px 0 0;
+    box-shadow: #422800 2px 2px 0 0;
     color: #422800;
     cursor: pointer;
     display: inline-block;
@@ -121,6 +140,8 @@ h3 {
     -webkit-user-select: none;
     touch-action: manipulation;
     justify-content: center;
+    width: calc(100%/2);
+    padding: 0 25px;
 }
 
 .button-74:hover {
@@ -242,8 +263,7 @@ h3 {
     transform: translateY(0);
 }
 
-.container .card .face.face2 .content p,
-a {
+.container .card .face.face2 .content p,a {
     font-size: 10pt;
     margin: 0;
     padding: 0;
@@ -264,4 +284,25 @@ a {
     background: #333;
     color: whitesmoke;
     box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Updated on 22-11-2023 @Prince Lal */
+#schoolName{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    color: #1900ff;
+    font-weight: bold;
+}
+
+#schoolLocation{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.school a{
+    text-decoration: none;
 }

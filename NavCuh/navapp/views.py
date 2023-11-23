@@ -13,18 +13,24 @@ def hostel(request):
 def searchbar(request):
     
     if request.method=='POST':
+        # 'searched' is the name of input
         searched =  request.POST['searched']
-        print(searched)
         dept_search = Department.objects.filter(dept_name__icontains = searched)
+        teacher_search = Teacher.objects.filter(name__icontains = searched)
+        school_search = School.objects.filter(school_name__icontains = searched)
     
     else:
         
         searched =  request.POST['searched']
         dept_search = Department.objects.filter(dept_name__icontains = searched)
+        teacher_search = Teacher.objects.filter(name__icontains = searched)
+        school_search = School.objects.filter(school_name__icontains = searched)
         
     return render(request,'navapp/search.html',context={
         "searched":searched,
-        "searched_depts":dept_search        
+        "searched_depts":dept_search,
+        "searched_teacher": teacher_search,
+        "searched_school": school_search,
     })
 
 class AllSchoolView(ListView):
