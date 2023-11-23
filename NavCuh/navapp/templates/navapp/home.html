@@ -1,3 +1,17 @@
 {% extends "navapp/base.html" %}
+{% load static %}
+
 {% block title_block %}CUH navigation{% endblock %} 
-{% block style_block %}{% endblock %} {% block body_block %} {% endblock %}
+
+{% block style_block %}
+<link rel="stylesheet" href="{% static 'home.css' %}">
+{% endblock %} 
+
+{% block body_block %}
+
+
+
+<div class="home_bg">
+    <img id="img" src="static/university.jpeg"/>
+</div>
+{% endblock %}

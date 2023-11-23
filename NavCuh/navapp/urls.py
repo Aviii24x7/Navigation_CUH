@@ -7,5 +7,7 @@ urlpatterns = [
     path("school/<slug:slugy>", views.AllDeptView.as_view(), name="all-dept-page"),
     path("department/<slug:slug>", views.AllTeacherView.as_view(), name="all-teachers-page"),
     path("search", views.searchbar, name="search-page"),
+    path("hostel", views.hostel, name="hostel"),
+
 
 ]

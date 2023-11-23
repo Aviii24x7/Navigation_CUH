@@ -8,6 +8,8 @@ from django.views import View
 def home(request):
     return render(request, 'navapp/home.html')
 
+def hostel(request):
+    return render(request,'navapp/hostel.html')
 def searchbar(request):
     
     if request.method=='POST':

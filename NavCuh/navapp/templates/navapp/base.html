@@ -35,35 +35,35 @@
                         <a class="nav-link" href="#">Departments</a>
                     </li> -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
+                        <a class="nav-link " href="{% url "all-school-page"%}" role="button" aria-expanded="false">
                             School
                         </a>
-                        <ul class="dropdown-menu">
+                        {% comment %} <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="{% url "all-school-page"%}">Action</a></li>
                             <li><a class="dropdown-item" href="#">Another action</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
                             <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
+                        </ul> {% endcomment %}
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                            Academic Blocks
+                            Enquiry
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Academic Block 1</a></li>
-                            <li><a class="dropdown-item" href="#">Academic Block 3</a></li>
-                            <li><a class="dropdown-item" href="#">Academic Block 4</a></li>
-                            <li><a class="dropdown-item" href="#">SOET</a></li>
-
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="{% url "hostel"%}" >Hostel</a></li>
+                            <li><a class="dropdown-item" href="#">Admission</a></li>
+                            <li><a class="dropdown-item" href="https://www.cuh.ac.in/exam_datesheet.aspx">Examination</a></li>
+                            <li><a class="dropdown-item" href="https://cuh.campuspro.in/StudentFeePayment.aspx">Fee Payment</a></li>
+                           
+{% comment %} 
+                            <li><a class="dropdown-item" href="#">Another action</a></li> {% endcomment %}
                             
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            {% comment %} <li><a class="dropdown-item" href="#">Something else here</a></li> {% endcomment %}
                         </ul>
                     </li>
                     <!-- <li class="nav-item">
