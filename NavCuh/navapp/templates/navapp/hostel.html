@@ -8,12 +8,17 @@
 
 {% block body_block%} 
 
-    
-<h1 class="head">  Hostel Allotment Procedure </h1>
 
-<div id="steps" >
+<main>
+<section>
+    <div class="coverpic">
+        <img src="static/university.jpeg" alt="coverpic">
+    </div>
 
-<h5 id="">Step 1:</h5>
+    <div class="text">
+        <h1 class="head">  Hostel Allotment Procedure </h1>
+
+        <h5 id="">Step 1:</h5>
 <p> Ensure that your name is in Hostel Allotment List 
     <a href= "https://www.cuh.ac.in/Hostel.aspx?category=facilities">Check list here</a>
 </p>
@@ -50,7 +55,83 @@
         <li>   Girls Hostel Office Contact no.: 01285-260178 </li>
     </ul>  
 </p>
+        
+    </div>
+</section> 
+</main>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% comment %} <h1 class="head">  Hostel Allotment Procedure </h1> {% endcomment %}
+
+{% comment %} <div id="steps" > {% endcomment %}
+
+{% comment %} <h5 id="">Step 1:</h5>
+<p> Ensure that your name is in Hostel Allotment List 
+    <a href= "https://www.cuh.ac.in/Hostel.aspx?category=facilities">Check list here</a>
+</p>
+
+<h5>Step 2:</h5>
+<p> Download the Hostel Allotment Form <a href= "https://www.cuh.ac.in/admin/uploads/department/hostel/hostel_form_chalan.pdf">Click here</a> </p>
+
+<h5>Step 3:</h5>
+<p> Prepare the following documents:
+    <ol>
+        <li>CUCET Score Card (if applicable)</li>
+          <li>  CGPA and Aggregate Marks Sheet of CUH</li>
+          <li>  Letter for supervisor/HoD in case of old Ph.D. Student</li>
+          <li>  Voter ID Card of Father/ Mother</li>
+          <li>  Category Certificate (if applicable)</li>
+          <li>  Medical Fitness Certificate</li>
+          <li>  Receipt/ Challan of Payment of current semester</li>
+    </ol>
+</p>
+
+<h5>Step 4:</h5>
+<p> Make the payment of hostel according to <a href= "https://www.cuh.ac.in/admin/uploads/department/hostel/Hostel%20Fee%20Structure%202023-24.pdf "> Fee Structure</a> to the University bank through any Punjab National Bank (check hostel form for bank details) </p>
 </div>
+
+<h5>Step 5:</h5>
+<p> Get signature of your concerned Head of Department (HOD) on the hostel form 
+    <a href= {% url "all-school-page" %}>(Check where is HOD's Office)</a>
+</p>
+
+<h5>Step 6:</h5>
+<p> Submit the form in your respective Hostel warden 
+    <ul>
+        <li> Boys Hostel Office Contact no.: 01285-260177 </li>
+        <li>   Girls Hostel Office Contact no.: 01285-260178 </li>
+    </ul>  
+</p> {% endcomment %}
+
+{% comment %} </div> {% endcomment %}
 
 {% endblock %}
