@@ -10,6 +10,10 @@ def home(request):
 
 def hostel(request):
     return render(request,'navapp/hostel.html')
+
+def admission(request):
+    return render(request,'navapp/admission.html')
+
 def searchbar(request):
     
     if request.method=='POST':

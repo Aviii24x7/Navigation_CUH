@@ -8,6 +8,7 @@ urlpatterns = [
     path("department/<slug:slug>", views.AllTeacherView.as_view(), name="all-teachers-page"),
     path("search", views.searchbar, name="search-page"),
     path("hostel", views.hostel, name="hostel"),
+    path("admission", views.admission, name="admission"),
 
 
 ]

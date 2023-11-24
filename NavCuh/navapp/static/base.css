@@ -1,17 +1,21 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
-body{
+
+body {
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
+    color: white
 }
-#navbarBrand{
-    font-size:28pt;
+
+#navbarBrand {
+    font-size: 28pt;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
 /* .collapse .navbar-collapse{
     display: flex;
     float: right;
@@ -21,12 +25,17 @@ body{
     background-color: aqua;
     padding: 0px;
 } */
-.nav-link:hover{
-    background-color: aqua;
+
+
+.nav-link:hover {
+
+    background-color: rgb(39, 144, 144);
 }
-.carousel-item img{
+
+.carousel-item img {
     height: 80vh;
 }
-footer .container-fluid{
+
+footer .container-fluid {
     height: 150px;
 }

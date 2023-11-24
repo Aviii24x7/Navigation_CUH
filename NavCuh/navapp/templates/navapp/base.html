@@ -20,7 +20,7 @@
     <nav class="navbar navbar-expand-lg" style="background-color: #243A73;" id="navbar-container flex gap-4">
         <div class="container-fluid px-2">
             <a class="navbar-brand" id="navbarBrand" href="{% url "starting_page" %}">
-                <img src="static/cuhlogo.png" alt="" style="height= 100px">
+                <img src="/static/cuhlogo.png" alt="" style="height= 100px">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -54,7 +54,7 @@
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="{% url "hostel"%}" >Hostel</a></li>
-                            <li><a class="dropdown-item" href="#">Admission</a></li>
+                            <li><a class="dropdown-item" href="{% url "admission" %}">Admission</a></li>
                             <li><a class="dropdown-item" href="https://www.cuh.ac.in/exam_datesheet.aspx">Examination</a></li>
                             <li><a class="dropdown-item" href="https://cuh.campuspro.in/StudentFeePayment.aspx">Fee Payment</a></li>
                            

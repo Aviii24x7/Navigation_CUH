@@ -1,16 +1,15 @@
-
-  /* min-height:100vh;
+/* min-height:100vh;
   width:100%; */
-  /* background-image: linear-gradient(rgba(115, 144, 231, 0.7), rgba(134, 139, 161, 0.7)),url('university.jpeg');
+/* background-image: linear-gradient(rgba(115, 144, 231, 0.7), rgba(134, 139, 161, 0.7)),url('university.jpeg');
   background-position: center;
   background-size: cover; */
-  /* position: relative; */
-   
+/* position: relative; */
 
-.divv #img{
-    /* min-height:60vh; */
-    height:88vh;
-    width:100%;
-    opacity:0.5;
-  
+
+.divv #img {
+  /* min-height:60vh; */
+  height: 88vh;
+  width: 100%;
+  opacity: 0.8;
+
 }
