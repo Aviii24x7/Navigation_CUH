@@ -1,6 +1,6 @@
 body {
-  margin: 0;
-  background-color: hsl(0, 18%, 97%);
+  margin: 0px;
+  background-color: hsl(0, 100%, 97%);
 }
 
 main {
@@ -12,18 +12,33 @@ main {
   text-align: center;
 }
 
-.coverpic > img {
+.coverpic>img {
   width: 100%;
   max-width: 800px;
   height: 500px;
   margin: 0 auto;
 }
 
-.text {
-  text-align: center;
+.text-hostel {
+  text-align: left;
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
+  padding: 20px;
+}
+
+.text-hostel h1 {
+  text-align: center;
+  font-weight: bolder;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.text-hostel h5 {
+  font-weight: bold;
+}
+
+.text-hostel p {
+  font-size: larger;
 }
 
 #heading {
@@ -38,7 +53,7 @@ main {
     line-height: 1.4;
 } */
 
-.sidebar > img {
+.sidebar>img {
   width: 100%;
 }
 
@@ -49,8 +64,8 @@ section {
   max-width: 800px;
   margin-right: 24px;
   background-color: white;
-/* box-shadow: 3px 0 6px #ccc; */
-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+  /* box-shadow: 3px 0 6px #ccc; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   box-sizing: border-box;
 }
 
