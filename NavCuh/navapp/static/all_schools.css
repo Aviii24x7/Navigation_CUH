@@ -5,14 +5,15 @@
     box-sizing: border-box;
 }
 
-#headline{
+#headline {
     margin-top: 10px;
     margin-bottom: 0px;
     text-align: center;
-    font-family:'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 40px;
     font-weight: 900;
 }
+
 .school {
     margin-top: 20px;
     width: 100%;
@@ -23,17 +24,25 @@
     height: 100vh;
 }
 
-.schoolList{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
-    padding: 5px 30px;
-}
-#schoolName{
+/* .schoolList {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 40px;
+    /* flex-direction: column; */
+    /* align-items: center;
+    justify-content: center; */
+    /* gap: 20px; */
+    /* padding: 5px 30px; */
+    /* margin: 0px;
+    padding: 0px;
+    width: 100%;
+} */
+
+#schoolName {
     display: flex;
     font-family: 'Roboto', sans-serif;
 }
+
 .button-85 {
     padding: 0.6em 2em;
     border: none;
@@ -129,10 +138,10 @@ h3 {
     box-shadow: #422800 2px 2px 0 0;
     color: #422800;
     cursor: pointer;
-    display: inline-block;
+    /* display: inline-block; */
     font-weight: 600;
     font-size: 18px;
-    padding: 0 18px;
+    /* padding: 0 18px; */
     line-height: 50px;
     text-align: center;
     text-decoration: none;
@@ -140,8 +149,7 @@ h3 {
     -webkit-user-select: none;
     touch-action: manipulation;
     justify-content: center;
-    width: calc(100%/2);
-    padding: 0 25px;
+    /* width: 50%; */
 }
 
 .button-74:hover {
@@ -263,7 +271,8 @@ h3 {
     transform: translateY(0);
 }
 
-.container .card .face.face2 .content p,a {
+.container .card .face.face2 .content p,
+a {
     font-size: 10pt;
     margin: 0;
     padding: 0;
@@ -288,7 +297,7 @@ h3 {
 
 
 /* Updated on 22-11-2023 @Prince Lal */
-#schoolName{
+#schoolName {
     display: flex;
     margin: auto;
     justify-content: center;
@@ -297,12 +306,21 @@ h3 {
     font-weight: bold;
 }
 
-#schoolLocation{
+#schoolLocation {
     display: flex;
     justify-content: center;
     text-align: center;
 }
 
-.school a{
+.school a {
     text-decoration: none;
+}
+
+/* 23-11-2023  */
+/* #schoolButton{
+display: flex;
+width: 40%;} */
+
+#all-school{
+    width: 100vw;
 }
