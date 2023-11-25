@@ -1,19 +1,25 @@
 {% extends "navapp/base.html" %}
-
+{% load static %}
+``
+{% block title_block %}Hostel Enquiry{% endblock title_block %}
+{% block style_block %}
+<link rel="stylesheet" href="{% static 'search.css' %}">
+{% endblock %} 
 {% block body_block%} 
-<h2> 
-    You are searching for '<b>{{searched}}</b>'
-</h2>
+<main>
+    
+    
+    <section>
+    <h2> 
+        Here are results for '<b>{{searched}}</b>' :
+    </h2>
 
-
-{% comment %}
- If you seach for a department
-{% endcomment %}
 {% if searched_depts %}
 {% for dept in searched_depts %}
 
     <a href="{% url "all-teachers-page" dept.slug %}" >
         {{dept.dept_name}}
+        {% comment %} <br> {% endcomment %}
     </a>
 {% endfor %}
 {% endif %}
@@ -26,6 +32,7 @@
 
     <a href="#" >
         {{teacher.name}}
+        {% comment %} <br> {% endcomment %}
     </a>
 {% endfor %}
 {% endif %}
@@ -38,8 +45,11 @@
 
     <a href="{% url "all-dept-page" school.slugy %}" >
         {{school.school_name}}
+        {% comment %} <br> {% endcomment %}
     </a>
 {% endfor %}
 {% endif %}
+</section>
+</main>
 
 {% endblock %}
