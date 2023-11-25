@@ -28,14 +28,23 @@ body {
 
 
 .nav-link:hover {
-
-    background-color: rgb(39, 144, 144);
+    background-color: #fbeee0;
+    border-radius: 10px;
+    color: blueviolet !important;
 }
-
 .carousel-item img {
     height: 80vh;
 }
 
 footer .container-fluid {
     height: 150px;
+}
+
+.nav-link { 
+    color: white !important;
+    padding: 0px 10px;
+}
+
+.navbar-nav{
+    gap: 10px !important;
 }

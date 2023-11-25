@@ -5,11 +5,22 @@
   background-size: cover; */
 /* position: relative; */
 
+body{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.container2{
+  margin: 0px;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
 
-.divv #img {
+.container2 #img {
   /* min-height:60vh; */
-  height: 88vh;
+  /* margin: 30px; */
+  height: 80vh;
   width: 100%;
   opacity: 0.8;
-
+  border-radius: 20px;
 }

@@ -17,7 +17,7 @@
 
 
 <body>
-    <nav class="navbar navbar-expand-lg" style="background-color: #243A73;" id="navbar-container flex gap-4">
+    <nav class="navbar navbar-expand-lg" style="background-color: #1c0305;" id="navbar-container flex gap-4">
         <div class="container-fluid px-2">
             <a class="navbar-brand" id="navbarBrand" href="{% url "starting_page" %}">
                 <img src="/static/cuhlogo.png" alt="" style="height= 100px">
@@ -72,7 +72,7 @@
                 </ul>
                 
             </div>
-            <form method='POST' action="{% url "search-page" %}" class="d-flex" role="search">
+            <form method='POST' action="{% url "search-page" %}" class="d-flex px-2" role="search">
                 {% csrf_token %}
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
                     id="searchIcon" name="searched">
