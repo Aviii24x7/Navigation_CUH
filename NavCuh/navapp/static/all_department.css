@@ -7,12 +7,28 @@
 
 /* department container styling */
 #all-dept{
+    padding: 10px;
     width: 100%;
+}
+
+#all-dept h1{
+    display: flex;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 55px;
+    /* background-color: aquamarine; */
+}
+
+#all-dept p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-align: justify;
 }
 
 .dept_container{
     display: flex;
-    margin: 10px;
+    width: 100%;
+    /* margin: 10px; */
     gap: 10px;
 }
 
@@ -22,9 +38,15 @@
     min-width: calc(30%);
     border: 2px;
     border-style:solid;
-    background-image: url(Sample.jpg);
+    /* background-image: url(Sample.jpg); */
 }
 
 .dept{
 
+}
+
+.containerButton{
+    display:block;
+    justify-content: center;
+    width: 100%;
 }
