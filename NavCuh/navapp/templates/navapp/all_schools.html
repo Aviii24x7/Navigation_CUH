@@ -1,6 +1,11 @@
-{% extends "navapp/base.html " %} {% load static %} {% block title_block %}All
-Schools{% endblock %} {% block style_block %} {% endblock %} {% block body_block
-%}
+{% extends "navapp/base.html " %} 
+{% load static %} 
+{% block title_block %}All
+Schools
+{% endblock %} 
+{% block style_block %} 
+{% endblock %} 
+{% block body_block %}
 <link rel="stylesheet" href="{% static 'all_schools.css' %}" />
 {% comment %}
 <div id="all-school" class="container">
@@ -8,8 +13,8 @@ Schools{% endblock %} {% block style_block %} {% endblock %} {% block body_block
   <div class="container">
     <h2 id="headline">Schools</h2>
     <div class="container">
-      {% for school in all_schools %} {% include "navapp/includes/school.html"
-      %} {% endfor %}
+      {% for school in all_schools %} {% include "navapp/includes/school.html"%} 
+      {% endfor %}
     </div>
   </div>
 
