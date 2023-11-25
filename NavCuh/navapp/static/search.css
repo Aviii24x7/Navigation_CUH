@@ -18,6 +18,11 @@ section h2 {
     padding-bottom: 10px;
 }
 
+section p {
+    padding-bottom: 10px;
+    font-size: smaller;
+}
+
 section {
     display: flex;
     flex-direction: column;
