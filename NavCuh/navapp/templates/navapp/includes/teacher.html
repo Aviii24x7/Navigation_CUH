@@ -3,7 +3,7 @@
     
     <article class="teacher">
    {% comment %} <a href="{% url "dept-detail-page" dept.slug %}> </a> {% endcomment %}
-   
+       <img src={{ teacher.image.url }} , alt="{{teacher.name}} photo">
        <h1>{{teacher.name}}</h1>
        <h3>Designation: {{teacher.designation}}</h3>
        <h3>Office: {{teacher.office}}</h3>

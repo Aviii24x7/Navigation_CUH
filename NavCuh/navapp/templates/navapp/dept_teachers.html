@@ -11,6 +11,8 @@
 <section id="all-teachers">
   <h2>Teachers</h2>
   <div>
+    <img src={{ teacher.image.url }} , alt="{{teacher.name}}">
+
     {% for teacher in all_teachers %}
     {% include "navapp/includes/teacher.html" %} 
     {% endfor %}
