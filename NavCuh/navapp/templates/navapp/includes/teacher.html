@@ -1,18 +1,18 @@
 
     
-<section >
+{% comment %} <section > {% endcomment %}
   <article class="teacherDetails">
 
   <div class="article-wrapper">
     <figure>
-      <img src="https://i.pinimg.com/originals/48/35/b5/4835b5f9c52fd733eb26fb2c2b47bdc7.jpg" alt="Vanshika's Image"/>
+      {% comment %} <img src="https://i.pinimg.com/originals/48/35/b5/4835b5f9c52fd733eb26fb2c2b47bdc7.jpg" alt="Vanshika's Image"/> {% endcomment %}
+      <img src={{teacher.image.url }} , alt="{{teacher.name}} photo">
     </figure>
     <div class="article-body">
-      <img src={{ teacher.image.url }} , alt="{{teacher.name}} photo">
+      {% comment %} <img src={{teacher.image.url }} , alt="{{teacher.name}} photo"> {% endcomment %}
       <h1>{{teacher.name}}</h1>
       <h3>Designation: {{teacher.designation}}</h3>
       <h3>Office: {{teacher.office}}</h3> 
-      
       <a href="#" class="read-more">
         Read more <span class="sr-only">about this is some title</span>
         
@@ -20,7 +20,7 @@
     </div>
   </div>
   </article>
-</section>
+{% comment %} </section> {% endcomment %}
   
 
 
