@@ -31,6 +31,8 @@ class Teacher(models.Model):
     office = models.CharField(max_length=100)
     department = models.ForeignKey(Department, related_name="teachers", on_delete=models.CASCADE)
     
+    image = models.ImageField(upload_to="teacher", null=True)
+    
     def __str__(self) -> str:
         return f"{self.name}"
     

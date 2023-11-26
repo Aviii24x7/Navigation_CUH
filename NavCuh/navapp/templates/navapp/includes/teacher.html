@@ -8,6 +8,7 @@
       <img src="https://i.pinimg.com/originals/48/35/b5/4835b5f9c52fd733eb26fb2c2b47bdc7.jpg" alt="Vanshika's Image"/>
     </figure>
     <div class="article-body">
+      <img src={{ teacher.image.url }} , alt="{{teacher.name}} photo">
       <h1>{{teacher.name}}</h1>
       <h3>Designation: {{teacher.designation}}</h3>
       <h3>Office: {{teacher.office}}</h3> 
@@ -49,7 +50,7 @@
       </section> {% endcomment %}
 
    {% comment %} <a href="{% url "dept-detail-page" dept.slug %}> </a> {% endcomment %}
-   
+       {% comment %} <img src={{ teacher.image.url }} , alt="{{teacher.name}} photo"> {% endcomment %}
        {% comment %} <h1>{{teacher.name}}</h1>
        <h3>Designation: {{teacher.designation}}</h3>
        <h3>Office: {{teacher.office}}</h3>  {% endcomment %}
