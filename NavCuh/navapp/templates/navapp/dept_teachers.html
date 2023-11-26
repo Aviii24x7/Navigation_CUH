@@ -4,13 +4,14 @@
 {% block title_block %}All Departments{% endblock %}
 
 {% block style_block %} 
+
 {% endblock %} 
 
 {% block body_block %}
-
-<section id="all-teachers">
+<link rel="stylesheet" href="{% static 'allTeacher.css' %}" />
+<section id="allTeachers">
   <h2>Teachers</h2>
-  <div>
+  <div class="articles">
     {% for teacher in all_teachers %}
     {% include "navapp/includes/teacher.html" %} 
     {% endfor %}

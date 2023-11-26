@@ -1,16 +1,62 @@
-{% comment %} {% load static %}  {% endcomment %}
-<div class="teacher_container">
+
     
-    <article class="teacher">
+<section >
+  <article class="teacherDetails">
+
+  <div class="article-wrapper">
+    <figure>
+      <img src="https://i.pinimg.com/originals/48/35/b5/4835b5f9c52fd733eb26fb2c2b47bdc7.jpg" alt="Vanshika's Image"/>
+    </figure>
+    <div class="article-body">
+      <h1>{{teacher.name}}</h1>
+      <h3>Designation: {{teacher.designation}}</h3>
+      <h3>Office: {{teacher.office}}</h3> 
+      
+      <a href="#" class="read-more">
+        Read more <span class="sr-only">about this is some title</span>
+        
+      </a>
+    </div>
+  </div>
+  </article>
+</section>
+  
+
+
+    {% comment %} <section class="teacher">  {% endcomment %}
+
+
+
+
+      {% comment %} <section class="articles">
+        <article class="teacherDetails">
+          <div class="article-wrapper">
+            <figure>
+              <img src="https://picsum.photos/id/1011/800/450" alt="" />
+            </figure>
+            <div class="article-body">
+              <h1>{{teacher.name}}</h1>
+              <h3>Designation: {{teacher.designation}}</h3>
+              <h3>Office: {{teacher.office}}</h3> 
+              
+              <a href="#" class="read-more">
+                Read more <span class="sr-only">about this is some title</span>
+                
+              </a>
+            </div>
+          </div>
+        </article>
+      </section> {% endcomment %}
+
    {% comment %} <a href="{% url "dept-detail-page" dept.slug %}> </a> {% endcomment %}
    
-       <h1>{{teacher.name}}</h1>
+       {% comment %} <h1>{{teacher.name}}</h1>
        <h3>Designation: {{teacher.designation}}</h3>
-       <h3>Office: {{teacher.office}}</h3>
+       <h3>Office: {{teacher.office}}</h3>  {% endcomment %}
 
        {% comment %} <h1>{{dept.location}}</h1> {% endcomment %}
    
        
-</article>
-</div>
+    {% comment %} </section> {% endcomment %}
+{% comment %} </div> {% endcomment %}
 
