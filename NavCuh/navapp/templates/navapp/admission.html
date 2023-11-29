@@ -4,6 +4,7 @@
 {% block title_block %}Admission Enquiry {% endblock title_block %}
 {% block style_block %}
 <link rel="stylesheet" href="{% static "admission.css" %}">
+
 {% endblock %} 
 
 {% block body_block %} 
@@ -52,7 +53,24 @@
 
 
 <h5>Step 5:</h5>
-<p> If you get admitted through couselling, Visit the campus physically for document verification to your respctive Department.<br> <a href = {% url "all-school-page" %}>Check your Officials</a>
+<p> If you get admitted through couselling, Visit the campus physically for document verification to your respctive 
+    
+    <!-- Add the dropdown menu -->
+    {% comment %} <p> {% endcomment %}
+        Department:
+        <select id="departmentSelect" onchange="showAdmissionInfo()">
+            <option value="default">Select your Department</option>
+            <option value="cse">Computer Science & Engineering</option>
+            <option value="civil">Civil Engineering</option>
+            <option value="civil">Electrical Engineering</option>
+            <option value="civil">Printing & Packing Technology</option>
+            
+        </select>
+        {% comment %} <button onclick="showAdmissionInfo()">Show Admission Info</button> {% endcomment %}
+        <div id="admissionInfo"></div>
+    {% comment %} </p> {% endcomment %}
+    <br> 
+    <a href = {% url "all-school-page" %}>Check your Officials</a>
 </p>
 
 <h5>Step 6:</h5>
@@ -63,4 +81,63 @@
         </div>
     </section> 
     </main>
+    {% comment %} <script>
+        function toggleDropdown() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+    
+        function showAdmissionInfo(department) {
+          var infoDiv = document.getElementById("admissionInfo");
+          if (department === 'CSE') {
+            infoDiv.innerHTML = "<p>Admission in CSE - Content for CSE department goes here.</p>";
+          } else if (department === 'Civil') {
+            infoDiv.innerHTML = "<p>Admission in Civil - Content for Civil department goes here.</p>";
+          }
+          // You can add more conditions for other departments if needed
+        }
+    
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function (event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            for (var i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        };
+      </script> {% endcomment %}
+
+
+      {% comment %} <script>
+        function showAdmissionInfo() {
+            var department = document.getElementById("departmentSelect").value;
+            var admissionInfoDiv = document.getElementById("admissionInfo");
+    
+            if (department === "cse") {
+                admissionInfoDiv.innerHTML = "Admission in 108 for CSE";
+            } else if (department === "civil") {
+                admissionInfoDiv.innerHTML = "Admission in 108 for Civil";
+            }
+        }
+    </script> {% endcomment %}
+
+    <script>
+        function showAdmissionInfo() {
+            var department = document.getElementById("departmentSelect").value;
+            var admissionInfoDiv = document.getElementById("admissionInfo");
+    
+            if (department === "cse") {
+                admissionInfoDiv.innerHTML = "Admission in Room No- 107, Academic Block-3";
+            } 
+            else if (department === "default") {
+                admissionInfoDiv.innerHTML = "";
+            } 
+            else if (department === "civil") {
+                admissionInfoDiv.innerHTML = "Admission in 108 for Civil";
+            }
+        }
+    </script>
 {% endblock %}

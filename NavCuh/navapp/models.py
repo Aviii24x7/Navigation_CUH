@@ -16,7 +16,7 @@ class Department(models.Model):
     dept_name = models.CharField(max_length=50)
     location = models.CharField(max_length=50)
     head_name = models.CharField(max_length=70)
-    dept_description = models.TextField(null=True,max_length=300)
+    dept_description = models.TextField(null=True)
     
     school = models.ForeignKey(School, null=True, on_delete=models.CASCADE, related_name="departments")
     
@@ -26,8 +26,14 @@ class Department(models.Model):
         return f"{self.dept_name}"
 
 class Teacher(models.Model):
+    DESIGNATION_CHOICES = [
+        ('prof', 'Professor'),
+        ('asst_prof', 'Assistant Professor'),
+        ('assoc_prof', 'Associate Professor'),
+    ]
     name = models.CharField(max_length=50)
-    designation = models.CharField(max_length=50)
+    designation = models.CharField(max_length=50, choices=DESIGNATION_CHOICES)
+    # designation = models.CharField(max_length=50)
     office = models.CharField(max_length=100)
     department = models.ForeignKey(Department, related_name="teachers", on_delete=models.CASCADE)
     
