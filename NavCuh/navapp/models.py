@@ -27,9 +27,9 @@ class Department(models.Model):
 
 class Teacher(models.Model):
     DESIGNATION_CHOICES = [
-        ('prof', 'Professor'),
-        ('asst_prof', 'Assistant Professor'),
-        ('assoc_prof', 'Associate Professor'),
+        ('Professor', 'Professor'),
+        ('Associate Professor', 'Associate Professor'),
+        ('Assistant Professor', 'Assistant Professor'),
     ]
     name = models.CharField(max_length=50)
     designation = models.CharField(max_length=50, choices=DESIGNATION_CHOICES)
