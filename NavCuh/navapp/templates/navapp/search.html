@@ -52,13 +52,13 @@
 
 
 {% comment %}
- If you seach for a teachers by name
+ If you seach for a teachers
 {% endcomment %}
 {% if searched_teacher %}
 {% for teacher in searched_teacher %}
 
-    <a href="{% url "all-teachers-page" teacher.department.slug %}" >
-        {{teacher.name}} : {{teacher.department}}
+    <a href="#" >
+        {{teacher.name}}
         {% comment %} <br> {% endcomment %}
     </a>
 {% endfor %}
@@ -70,8 +70,7 @@
 {% if seacherd_by_office %}
 {% for teacher in seacherd_by_office %}
 
-    <a href="{% url "all-teachers-page" teacher.department.slug %}" >
-    
+    <a href="#" >
          {{teacher.office}} : {{teacher.name}}
         {% comment %} <br> {% endcomment %}
     </a>

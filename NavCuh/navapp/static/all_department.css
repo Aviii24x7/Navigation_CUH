@@ -1,32 +1,31 @@
 /* @Prince Lal */
-#departments {
+#departments{
     display: flex;
     justify-content: center;
     text-align: center;
 }
 
 /* department container styling */
-#all-dept {
+#all-dept{
     padding: 10px;
     width: 100%;
 }
 
-#all-dept h1 {
+#all-dept h1{
     display: flex;
     justify-content: center;
-    /* font-family: 'Times New Roman', Times, serif; */
-    font-family: 'Roboto', sans-serif;
-    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 55px;
     /* background-color: aquamarine; */
 }
 
-#all-dept p {
+#all-dept p{
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
     text-align: justify;
 }
 
-.dept_container {
+.dept_container{
     display: flex;
     width: 100%;
     /* margin: 10px; */
@@ -34,23 +33,22 @@
 }
 
 /* every department */
-.container {
+.container{
     display: flex;
     min-width: calc(30%);
     border: 2px;
-    border-style: solid;
+    border-style:solid;
     /* background-image: url(Sample.jpg); */
 }
 
-.dept {
+.dept{
     width: 48%;
 }
-
 /* 
 .departmentButton{
     display:flex;
     /* width: 100%; */
-/* flex-direction: column; 
+    /* flex-direction: column; 
     justify-content: space-between;
     flex-wrap: nowrap; */
 /* } */
@@ -64,11 +62,9 @@
 }
 
 .dept {
-    width: 48%;
-    /* Adjust the width as needed */
+    width: 48%; /* Adjust the width as needed */
     /* margin: 1%; Adjust the margin as needed */
-    box-sizing: border-box;
-    /* Include padding and border in the width calculation */
+    box-sizing: border-box; /* Include padding and border in the width calculation */
     border-style: solid;
     /* margin: 10px; */
     border-radius: 30px;
@@ -90,8 +86,6 @@
     -webkit-user-select: none;
     touch-action: manipulation;
     justify-content: center;
-    display: flex;
-    align-items: center;
 }
 
 .dept:hover {
@@ -107,22 +101,16 @@
     .dept {
         min-width: 120px;
         padding: 0 25px;
-
     }
 }
 
-#departmentName {
+#departmentName{
     margin: 0px;
-    color: #1900ff;
-    font-weight: 600;
 }
-
 #departmentLocation {
-    margin: 0;
-    /* Remove default margin */
+    margin: 0; /* Remove default margin */
     text-align: center;
     padding: 10px 0px;
-    color: black;
 }
 
 h2 {
@@ -131,13 +119,6 @@ h2 {
     /* text-decoration: none; */
 }
 
-.dept a {
+.dept a{
     text-decoration: none;
-}
-
-/* css for school-description */
-#school-description {
-    border-style: solid;
-    padding: 10px;
-
 }

@@ -11,9 +11,9 @@
 {% comment %} <link rel="stylesheet" href="{% static 'all_schools.css' %}"> {% endcomment %}
 
 <section id="all-dept">
-  <h1><b> {{school.school_name}} </b></h1>
+  <h1> {{school.school_name}} </h1>
   <p id="school-description">{{school.school_description}}</p>
-  <h2 id="departments"><b>Departments</b></h2>
+  <h2 id="departments">Departments</h2>
   <div class="flex-container2">
     {% for dept in all_dept %}
     {% include "navapp/includes/dept.html" %} 
