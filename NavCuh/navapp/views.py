@@ -39,7 +39,7 @@ def searchbar(request):
         dept_search_loc = Department.objects.filter(location__icontains = searched)
         
         teacher_search = Teacher.objects.filter(name__icontains = searched)
-        teacher_office_search = Teacher.objects.filter(office__icontains = searched)
+        teacher_office_search = Teacher.objects.filter(office__icontains = searched)        
         
         school_search = School.objects.filter(school_name__icontains = searched)
         school_search_loc = School.objects.filter(location__icontains = searched)
