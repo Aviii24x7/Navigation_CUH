@@ -62,15 +62,15 @@
             <option value="default">Select your Department</option>
             <option value="cse">Computer Science & Engineering</option>
             <option value="civil">Civil Engineering</option>
-            <option value="civil">Electrical Engineering</option>
-            <option value="civil">Printing & Packing Technology</option>
+            <option value="ee">Electrical Engineering</option>
+            <option value="ppt">Printing & Packing Technology</option>
             
         </select>
         {% comment %} <button onclick="showAdmissionInfo()">Show Admission Info</button> {% endcomment %}
         <div id="admissionInfo"></div>
     {% comment %} </p> {% endcomment %}
-    <br> 
-    <a href = {% url "all-school-page" %}>Check your Officials</a>
+    {% comment %} <br>  {% endcomment %}
+    {% comment %} <a href = {% url "all-school-page" %}>Check your Officials</a> {% endcomment %}
 </p>
 
 <h5>Step 6:</h5>
@@ -136,7 +136,13 @@
                 admissionInfoDiv.innerHTML = "";
             } 
             else if (department === "civil") {
-                admissionInfoDiv.innerHTML = "Admission in 108 for Civil";
+                admissionInfoDiv.innerHTML = "Admission in Room No -08, C.V.Raman Block";
+            }
+            else if (department === "ee") {
+                admissionInfoDiv.innerHTML = "Admission in Room No -18, C.V.Raman Block";
+            }
+            else if (department === "ppt") {
+                admissionInfoDiv.innerHTML = "Admission in Room No -28, C.V.Raman Block";
             }
         }
     </script>
