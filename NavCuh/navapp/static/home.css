@@ -1,10 +1,3 @@
-/* min-height:100vh;
-  width:100%; */
-/* background-image: linear-gradient(rgba(115, 144, 231, 0.7), rgba(134, 139, 161, 0.7)),url('university.jpeg');
-  background-position: center;
-  background-size: cover; */
-/* position: relative; */
-
 body{
   margin: 0px;
   padding: 0px;
@@ -38,10 +31,31 @@ body{
   cursor: pointer;
 }
 
-#departmentListBlock1{
+/* Common css implemented for all block */
+#departmentListBlock1, #departmentListBlock3, #departmentListBlock4{
   /* display: hidden; */
   visibility: hidden;
-  background-color: aqua;
+  position: absolute;
+  /* background-color: rgba(133, 115, 101, 0.836); */
+  background-color: rgba(133, 115, 101, 1);
+  color: white;
+  width: 200px;
+  margin-left: -50px;
+  margin-top: 45px;
+  border-radius: 10px;
+  padding: 0px 10px;
+  /* text-align: center; */
+}
+#departmentListBlock1::before, #departmentListBlock3::before, #departmentListBlock4::before {
+  content: ''; /* Create an empty content for the arrow */
+  position: absolute;
+  top: -20px; /* Adjust this value to position the arrow vertically */
+  left: 50%; /* Center the arrow horizontally */
+  margin-left: -10px; /* Adjust this value to center the arrow properly */
+  border-width: 10px; /* Adjust the size of the arrow */
+  border-style: solid;
+  border-color: transparent transparent rgba(133, 115, 101, 1) transparent;
+  /* margin-bottom: 0rem ; */
 }
 .academicBlock1:hover #departmentListBlock1 {
   visibility: visible;
@@ -61,7 +75,8 @@ body{
 #departmentListBlock3{
   /* display: hidden; */
   visibility: hidden;
-  background-color: aqua;
+  /* background-color: rgba(133, 115, 101, 0.836); */
+  /* width: 170px; */
 }
 .academicBlock3:hover #departmentListBlock3 {
   visibility: visible;
@@ -76,12 +91,20 @@ body{
   top: 14%;
   left: 37%;
   cursor: pointer;
+
 }
 
 #departmentListBlock4{
   /* display: hidden; */
   visibility: hidden;
-  background-color: aqua;
+  /* background-color: rgba(133, 115, 101, 0.836); */
+  /* width: 200px; */
+  
+}
+
+#departmentListBlock4 p{
+  padding: 0px;
+  margin: 0px;
 }
 .academicBlock4:hover #departmentListBlock4 {
   visibility: visible;
@@ -90,7 +113,7 @@ body{
 /* SOET Block (C.V.Raman) */
 .soetBlock{
   position: absolute;
-  border-style: solid;
+  border-style: none;
   height: 20px;
   width: 50px;
   bottom: 20%;
@@ -100,13 +123,50 @@ body{
 #soetDepartmentList{
   /* display: hidden; */
   visibility: hidden;
-  background-color: aqua;
-  width: 180px;
+  position: absolute;
+  background-color: rgba(133, 115, 101, 1);
+  color: white;
+  width: 200px;
+  margin-top: 30px;
+  margin-left: -80px;
+  border-radius: 10px;
+  padding: 0px 10px;
 }
-#soetDepartmentList p{
-  padding: 0px;
-  margin: 0px;
-}ar
+
+#soetDepartmentList::before{
+  content: ''; /* Create an empty content for the arrow */
+  position: absolute;
+  top: -20px; /* Adjust this value to position the arrow vertically */
+  left: 50%; /* Center the arrow horizontally */
+  margin-left: -10px; /* Adjust this value to center the arrow properly */
+  border-width: 10px; /* Adjust the size of the arrow */
+  border-style: solid;
+  border-color: transparent transparent rgba(133, 115, 101, 1) transparent;
+
+}
+
 .soetBlock:hover #soetDepartmentList {
   visibility: visible;
+}
+
+ul, li{
+  margin: 0px;
+  padding: 0px 5px;
+}
+
+#departmentListBlock1 ul, #departmentListBlock3 ul, #departmentListBlock4 ul, #soetDepartmentList ul{
+  margin-bottom: 0rem ;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+#departmentListBlock1 li:hover, #departmentListBlock3 li:hover, #departmentListBlock4 li:hover, #soetDepartmentList li:hover {
+  background-color:  rgb(85, 72, 63);
+  border-radius: 10px;
+
+}
+/* Stying None to "a" tag under all the block */
+.textDecorationDepartment{
+  text-decoration: none;
+  color: white;
 }
