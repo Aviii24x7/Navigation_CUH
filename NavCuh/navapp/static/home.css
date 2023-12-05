@@ -5,7 +5,7 @@ body{
 }
 .container2{
   margin: 0px;
-  padding: 10px 20px;
+  padding: 10px 10px 5px 10px;
   border-radius: 10px;
   position: relative;
 }
@@ -14,7 +14,7 @@ body{
 .container2 #img {
   /* min-height:60vh; */
   /* margin: 30px; */
-  height: 80vh;
+  height: 83vh;
   width: 100%;
   opacity: 0.8;
   border-radius: 20px;
