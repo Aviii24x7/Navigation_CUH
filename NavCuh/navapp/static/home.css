@@ -46,3 +46,67 @@ body{
 .academicBlock1:hover #departmentListBlock1 {
   visibility: visible;
 }
+
+/* Academic Block 3 */
+.academicBlock3{
+  position: absolute;
+  border-style: none;
+  height: 50px;
+  width: 90px;
+  top: 03.5%;
+  left: 32%;
+  cursor: pointer;
+}
+
+#departmentListBlock3{
+  /* display: hidden; */
+  visibility: hidden;
+  background-color: aqua;
+}
+.academicBlock3:hover #departmentListBlock3 {
+  visibility: visible;
+}
+
+/* Academic Block 4 */
+.academicBlock4{
+  position: absolute;
+  border-style: none;
+  height: 50px;
+  width: 90px;
+  top: 14%;
+  left: 37%;
+  cursor: pointer;
+}
+
+#departmentListBlock4{
+  /* display: hidden; */
+  visibility: hidden;
+  background-color: aqua;
+}
+.academicBlock4:hover #departmentListBlock4 {
+  visibility: visible;
+}
+
+/* SOET Block (C.V.Raman) */
+.soetBlock{
+  position: absolute;
+  border-style: solid;
+  height: 20px;
+  width: 50px;
+  bottom: 20%;
+  left: 31.5%;
+  cursor: pointer;
+}
+#soetDepartmentList{
+  /* display: hidden; */
+  visibility: hidden;
+  background-color: aqua;
+  width: 180px;
+}
+#soetDepartmentList p{
+  padding: 0px;
+  margin: 0px;
+}ar
+.soetBlock:hover #soetDepartmentList {
+  visibility: visible;
+}
