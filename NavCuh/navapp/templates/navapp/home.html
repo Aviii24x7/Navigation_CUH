@@ -13,10 +13,46 @@
 
 <div class="container2">    
     <img id="img" src="static/map.png"/>
+    {% comment %} Academic Block 1 {% endcomment %}
+    <div class="academicBlock1">
+        <div id="departmentListBlock1">
+            <ul>
+            <li>Department of Physics</li>
+            <li><a class="textDecorationDepartment" href="{% url 'all-teachers-page' slug='biochemistry' %}">Department of BioChemistry</li>
+            {% comment %} <p>Computer Science & Engineering</p> {% endcomment %}
+            </ul>
+        </div>
+    </div>
+
+    {% comment %} Academic Block 3 {% endcomment %}
+    <div class="academicBlock3">
+        <div id="departmentListBlock3">
+            <ul>
+            <li><a class="textDecorationDepartment" href="{% url 'all-teachers-page' slug='law-department' %}">Department of Law</li>
+            <li><a class="textDecorationDepartment" href="{% url 'all-teachers-page' slug='computer-science-engineering' %}">Department of Computer Science and Engineering</li>
+            </ul>
+        </div>
+    </div>
+
+    {% comment %} Academic Block 4 {% endcomment %}
+    <div class="academicBlock4">
+        <div id="departmentListBlock4">
+            <ul>
+            <li><a class="textDecorationDepartment" href="{% url 'all-teachers-page' slug='journalism-and-mass-communication' %}">Department of Jourlism and Mass Communication</li>
+            <li>Department of Teacher Education</li>
+            </ul>
+        </div>
+    </div>
+
+    {% comment %} C.V.Raman Block {% endcomment %}
+    <div class="soetBlock">
+        <div id="soetDepartmentList">
+            <ul>
+                <li><a class="textDecorationDepartment" href="{% url 'all-teachers-page' slug='civil-engineering' %}">Civil Engineering</li>
+                <li><a class="textDecorationDepartment" href="{% url 'all-teachers-page' slug='electrical-engineering' %}">Printing & Packing Technology</li>
+                <li><a class="textDecorationDepartment" href="{% url 'all-teachers-page' slug='printing-and-packaging-technology' %}">Electrical Engineering</li>
+            </ul>
+        </div>
+    </div>
 </div>
-
-
-
-
-
 {% endblock %}
